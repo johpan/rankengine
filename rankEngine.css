@@ -1,0 +1,71 @@
+nav {
+  background: gray;
+  color: white;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+nav .menu>* {
+  margin-right: 0px;
+}
+
+nav div.menu a, nav div.menu a:visited {
+  color: white;
+}
+
+div.modal {
+  color: black;
+}
+
+div.modal article#about section,
+div.modal article#help section {
+  font-size: 0.8em;
+}
+
+div.content {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div#ranking {
+  margin: 0 auto;
+  width: 80%;
+}
+
+article.card {
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+article.card section {
+  padding:0;
+}
+
+article.card section.inner {
+  background-color: rgba(255,255,255,0.5);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 5% 10%;
+}
+
+article.card section.inner footer {
+  background-color: rgba(255,255,255,0.5);
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+article.card section.cardSizeSmall{
+  padding-top: 25%;
+}
+
+article.card section.cardSizeMedium{
+  padding-top: 50%;
+}
+
+article.card section.cardSizeTall{
+  padding-top: 100%;
+)

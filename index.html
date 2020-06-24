@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>Powered by RankEngine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic"/>
+    <link rel="stylesheet" href="rankEngine.css"/>
+    <style id="importedStyle"></style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="brand">
+        <span>RankEngine</span>
+      </a>
+      <div class="menu">
+        <label for="about">about</label> . 
+        <!--<a href="#" target="_new">github</a> .-->
+        <label for="help">help</label>
+        <label for="config" class="button">config</label>
+      </div>
+    </nav>
+    
+    <div class="modal">
+      <input id="about" type="checkbox"/>
+      <label for="about" class="overlay"></label>
+      <article id="about">
+        <header>
+          <h3>about RankEngine</h3>
+          <label for="about" class="close">&times;</label>
+        </header>
+        <section>
+          created by <a href="https://twitter.com/johpan" target="_new">@johpan</a><br>
+          using <a href="https://picnicss.com/" target="_new">Picnic CSS</a>
+          and <a href="https://www.google.ca/sheets/about/" target="_new">Google Sheets</a><br>
+          and <a href="https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/" target="_new">"How to use Google Sheets as a JSON Endpoint"</a>
+        </section>
+        <footer>
+          <label for="about" class="button">Close</label>
+        </footer>
+      </article>
+    </div>
+    
+    <div class="modal">
+      <input id="help" type="checkbox"/>
+      <label for="help" class="overlay"></label>
+      <article id="help">
+        <header>
+          <h3>how to use RankEngine</h3>
+          <label for="help" class="close">&times;</label>
+        </header>
+        <section>
+          Note: This app requires Google Sheets.
+          <hr>
+          <ol>
+            <li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1lTk2wI8ofJrMZ9Hm1iUCN6sNCGk3TEKowoaPYEnkRPk/edit?usp=sharing" target="_new">this template sheet</a> and make changes.</li>
+            <li>After you've filled it in, publish it.<br>
+            <code>File => Publish to the web</code></li>
+            <li>Click on the <code>config</code> button and paste in your rankings sheet hash.</li>
+            <li>If your ranking isn't the first sheet in the spreadsheet, input the sheet number.</li>
+            <li>Click <code>Submit</code>.</li>
+          </ol>
+        </section>
+        <footer>
+          <label for="help" class="button">Close</label>
+        </footer>
+      </article>
+    </div>
+    
+    <div class="modal">
+      <input id="config" type="checkbox"/>
+      <label for="config" class="overlay"></label>
+      <article>
+        <form>
+          <header>
+            <h3>Ranking Configuration</h3>
+            <label for="config" class="close">&times;</label>
+          </header>
+          <section>
+            <label for="h">Google Sheets Hash:
+              <input type="text" name="h">
+            </label>
+            <label for="s">Sheet Number:
+              <input type="number" name="s" min=1 placeholder="Default: 1">
+            </label>
+          </section>
+          <footer>
+            <input type="submit">
+          </footer>
+        </form>
+      </article>
+    </div>
+    
+    <div class="content">
+      <h1 id="rankTitle"></h1>
+      <div class="flex" id="ranking">
+        <center>Click help to get started!</center>
+      </div>
+    </div>
+
+    <script src="rankEngine.js"></script>
+  </body>
+</html>
